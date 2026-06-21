@@ -8,10 +8,10 @@ Tools Installed
 
 
 1. Cursor IDE — AI-powered code editor (already installed prior to this task)
-2. Claude Code (Anthropic) — installed via CLI inside WSL (Windows Subsystem for Linux), then connected to Cursor as an extension
-3. Codex (OpenAI) — installed via npm inside WSL, then connected to Cursor
-4. WSL2 (Ubuntu) — required as a prerequisite, since Claude Code does not run natively on Windows
-5. Node.js / npm (via nvm) — required as a prerequisite for installing Codex
+3. Claude Code (Anthropic) — installed via CLI inside WSL (Windows Subsystem for Linux), then connected to Cursor as an extension
+4. Codex (OpenAI) — installed via npm inside WSL, then connected to Cursor
+5. WSL2 (Ubuntu) — required as a prerequisite, since Claude Code does not run natively on Windows
+6. Node.js / npm (via nvm) — required as a prerequisite for installing Codex
 
 
 Steps Completed
