@@ -1,34 +1,34 @@
 # 100hires-setup-task
 Portfolio task: setting up Claude Code and Codex in Cursor
-AI Tools Onboarding — Portfolio Task
+
 
 This repository documents the setup process for three AI-native development tools — Cursor IDE, Claude Code, and Codex — as part of a portfolio task for a Junior Growth Marketing Specialist application at 100Hires.
 
 Tools Installed
 
 
-Cursor IDE — AI-powered code editor (already installed prior to this task)
-Claude Code (Anthropic) — installed via CLI inside WSL (Windows Subsystem for Linux), then connected to Cursor as an extension
-Codex (OpenAI) — installed via npm inside WSL, then connected to Cursor
-WSL2 (Ubuntu) — required as a prerequisite, since Claude Code does not run natively on Windows
-Node.js / npm (via nvm) — required as a prerequisite for installing Codex
+1. Cursor IDE — AI-powered code editor (already installed prior to this task)
+2. Claude Code (Anthropic) — installed via CLI inside WSL (Windows Subsystem for Linux), then connected to Cursor as an extension
+3. Codex (OpenAI) — installed via npm inside WSL, then connected to Cursor
+4. WSL2 (Ubuntu) — required as a prerequisite, since Claude Code does not run natively on Windows
+5. Node.js / npm (via nvm) — required as a prerequisite for installing Codex
 
 
 Steps Completed
 
 
-Installed WSL2 with Ubuntu (wsl --install) to get a Linux environment on Windows
-Installed the Claude Code CLI inside WSL using the official install script
-Added ~/.local/bin to the PATH so the claude command would be recognized
-Created this public GitHub repository and cloned it inside the WSL filesystem
-Opened the project in Cursor directly from the WSL terminal (cursor .) so Cursor would treat it as a WSL project from the start
-Installed the WSL extension in Cursor when prompted, for proper WSL integration
-Ran claude from Cursor's integrated WSL terminal, logged in with my Anthropic account (OAuth via browser), and confirmed folder trust — this auto-installed the Claude Code extension in Cursor
-Selected Sonnet 4.6 as the active model (the default model, Fable 5, was temporarily unavailable)
-Installed Node.js and npm inside WSL using nvm, since neither was present
-Installed Codex globally via npm install -g @openai/codex
-Ran codex from Cursor's integrated terminal and logged in with my OpenAI/ChatGPT account (OAuth via browser)
-Verified both Claude Code and Codex work correctly by asking each one to list the files in the project
+1. Installed WSL2 with Ubuntu (wsl --install) to get a Linux environment on Windows
+2. Installed the Claude Code CLI inside WSL using the official install script
+3. Added ~/.local/bin to the PATH so the claude command would be recognized
+4. Created this public GitHub repository and cloned it inside the WSL filesystem
+5. Opened the project in Cursor directly from the WSL terminal (cursor .) so Cursor would treat it as a WSL project from the start
+6. Installed the WSL extension in Cursor when prompted, for proper WSL integration
+7. Ran claude from Cursor's integrated WSL terminal, logged in with my Anthropic account (OAuth via browser), and confirmed folder trust — this auto-installed the Claude Code extension in Cursor
+8. Selected Sonnet 4.6 as the active model (the default model, Fable 5, was temporarily unavailable)
+9. Installed Node.js and npm inside WSL using nvm, since neither was present
+10. Installed Codex globally via npm install -g @openai/codex
+11. Ran codex from Cursor's integrated terminal and logged in with my OpenAI/ChatGPT account (OAuth via browser)
+12. Verified both Claude Code and Codex work correctly by asking each one to list the files in the project
 
 
 Issues Ran Into and How I Solved Them
