@@ -3,29 +3,29 @@ import os
 
 videos = [
     {
-        "expert": "mike-king",
-        "video_id": "vhZS8trALwQ",
-        "title": "Decoding the Future of SEO Measurement with Mike King"
+        "expert": "lily-ray",
+        "video_id": "J7ayY_Mdk4w",
+        "title": "What IS and ISN'T Working in SEO in 2024 - Aleyda Solis and Lily Ray"
     },
     {
         "expert": "koray-tugberk-gubur",
-        "video_id": "5PAoIhyalsg",
-        "title": "Technical SEO and Semantic SEO with Koray Tugberk Gubur"
+        "video_id": "mSHq_HxOyTA",
+        "title": "AI Agents Semantic SEO and Fortune 500 Secrets - Koray Tugberk"
     },
     {
         "expert": "nathan-gotch",
-        "video_id": "7mtCa8sqjBo",
-        "title": "AI Changed SEO Forever - How to Win in 2025"
-    },
-    {
-        "expert": "alex-birkett",
-        "video_id": "L_WeZSgFe5I",
-        "title": "SEO Strategies For The New Search World with Alex Birkett"
+        "video_id": "Y88G1JbGsEE",
+        "title": "Building AI SEO SaaS - Nathan Gotch"
     },
     {
         "expert": "aleyda-solis",
-        "video_id": "qHXh09fnRcE",
-        "title": "SEO Reloaded - Adapting Old SEO Rules in the New AI World"
+        "video_id": "NNl9sRCv3q8",
+        "title": "How to Prepare for AI Search - Aleyda Solis"
+    },
+    {
+        "expert": "alex-birkett",
+        "video_id": "nQv2o2X7DDU",
+        "title": "SEO Strategy 2026 - The Shift Most B2B SaaS Are Missing"
     },
 ]
 
