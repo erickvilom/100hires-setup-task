@@ -1,6 +1,6 @@
 # LinkedIn Posts — Ben Goodey
 
-**Profile:** https://www.linkedin.com/in/ben-goodey/
+**Profile:** https://www.linkedin.com/in/benjamingoodey/
 **Role:** Founder, Spicy Margarita — GEO & AI Search Educator
 **Collected:** June 2026
 **Method:** Manual collection (LinkedIn API requires enterprise approval)

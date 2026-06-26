@@ -1,6 +1,6 @@
 # LinkedIn Posts — Lily Ray
 
-**Profile:** https://www.linkedin.com/in/lily-ray-54b6b33/
+**Profile:** https://www.linkedin.com/in/lily-ray-44755615/
 **Role:** VP SEO & AI Search at Amsive | Founder of Algorythmic
 **Collected:** June 2026
 **Method:** Manual collection (LinkedIn API requires enterprise approval)
