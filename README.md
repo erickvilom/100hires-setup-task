@@ -9,7 +9,7 @@
 
 ## Why This Topic
 
-100Hires is an ATS built for startups and small businesses. The most direct growth lever for a company like this is organic visibility — appearing when founders and hiring managers search for "best ATS for startups" or "hiring software for small teams." AI-powered SEO content production is exactly the discipline that makes that happen at scale, and it's changing fast enough that having a current, practitioner-sourced playbook matters.
+100Hires is an AI-powered Applicant Tracking System competing in a market where buyers increasingly discover tools through AI search engines like ChatGPT and Perplexity, not just Google. AI-powered SEO content production is the discipline that determines whether a company like 100Hires shows up when a buyer asks "what's the best ATS for my team" — and staying current on how it works is no longer optional for any SaaS competing for organic visibility.
 
 ---
 
@@ -23,11 +23,11 @@ Selection criteria:
 - Active content creators (YouTube, LinkedIn, newsletters) — not just authors of one article
 - Practitioners with real client data or case studies, not just opinions
 - Mix of technical SEO, content strategy, and GEO (Generative Engine Optimization) perspectives
-- Avoided the obvious "famous" names (Neil Patel, Brian Dean) that industry sources themselves have flagged as no longer active practitioners
+
 
 ### YouTube Transcripts — 10 Videos
 
-Collected via the `youtube-transcript-api` Python library (no API key required). Transcripts are organized by expert in [`/research/youtube-transcripts/`](research/youtube-transcripts/).
+Collected via the `youtube-transcript-api` Python library. Transcripts are organized by expert in [`/research/youtube-transcripts/`](research/youtube-transcripts/).
 
 | Expert | Video | Topic |
 |--------|-------|-------|
@@ -44,7 +44,7 @@ Collected via the `youtube-transcript-api` Python library (no API key required).
 
 ### LinkedIn Posts — 3 Experts, 7 Posts
 
-Collected manually (LinkedIn API requires enterprise-level approval — documented as a limitation). Posts are in [`/research/linkedin-posts/`](research/linkedin-posts/).
+Collected manually (LinkedIn API requires enterprise-level approval). Posts are in [`/research/linkedin-posts/`](research/linkedin-posts/).
 
 - **Kevin Indig** — 3 posts: AI prompt tracking framework for B2B SaaS, SEO vs AEO comparison, AI Mode vs AI Overviews user behavior study (846k sessions)
 - **Ben Goodey** — 1 live case study (3 parts): translating 14 blog posts → 5.33x AI visibility increase in 60 days for a B2B SaaS client
