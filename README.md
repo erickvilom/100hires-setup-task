@@ -1,56 +1,102 @@
-# 100hires-setup-task
-Portfolio task: setting up Claude Code and Codex in Cursor
+# AI-Powered SEO Content Production — Research Project
 
+**Topic:** AI-Powered SEO Content Production for B2B SaaS  
+**Phase:** Portfolio Task — 100Hires Junior Growth Marketing Specialist  
+**Researcher:** Erick Villarce  
+**Completed:** June 2026
 
-This repository documents the setup process for three AI-native development tools — Cursor IDE, Claude Code, and Codex — as part of a portfolio task for a Junior Growth Marketing Specialist application at 100Hires.
+---
 
-Tools Installed
+## Why This Topic
 
+100Hires is an ATS built for startups and small businesses. The most direct growth lever for a company like this is organic visibility — appearing when founders and hiring managers search for "best ATS for startups" or "hiring software for small teams." AI-powered SEO content production is exactly the discipline that makes that happen at scale, and it's changing fast enough that having a current, practitioner-sourced playbook matters.
 
-1. Cursor IDE — AI-powered code editor (already installed prior to this task)
-3. Claude Code (Anthropic) — installed via CLI inside WSL (Windows Subsystem for Linux), then connected to Cursor as an extension
-4. Codex (OpenAI) — installed via npm inside WSL, then connected to Cursor
-5. WSL2 (Ubuntu) — required as a prerequisite, since Claude Code does not run natively on Windows
-6. Node.js / npm (via nvm) — required as a prerequisite for installing Codex
+---
 
+## What I Collected
 
-Steps Completed
+### Experts Researched — 15 Total
 
+I identified 15 practitioners (not theorists) who actively publish, experiment, and share real data on AI-powered SEO and content production for B2B SaaS. The full list with profiles, roles, and selection reasoning is in [`/research/sources.md`](research/sources.md).
 
-1. Installed WSL2 with Ubuntu (wsl --install) to get a Linux environment on Windows
-2. Installed the Claude Code CLI inside WSL using the official install script
-3. Added ~/.local/bin to the PATH so the claude command would be recognized
-4. Created this public GitHub repository and cloned it inside the WSL filesystem
-5. Opened the project in Cursor directly from the WSL terminal (cursor .) so Cursor would treat it as a WSL project from the start
-6. Installed the WSL extension in Cursor when prompted, for proper WSL integration
-7. Ran claude from Cursor's integrated WSL terminal, logged in with my Anthropic account (OAuth via browser), and confirmed folder trust — this auto-installed the Claude Code extension in Cursor
-8. Selected Sonnet 4.6 as the active model (the default model, Fable 5, was temporarily unavailable)
-9. Installed Node.js and npm inside WSL using nvm, since neither was present
-10. Installed Codex globally via npm install -g @openai/codex
-11. Ran codex from Cursor's integrated terminal and logged in with my OpenAI/ChatGPT account (OAuth via browser)
-12. Verified both Claude Code and Codex work correctly by asking each one to list the files in the project
+Selection criteria:
+- Active content creators (YouTube, LinkedIn, newsletters) — not just authors of one article
+- Practitioners with real client data or case studies, not just opinions
+- Mix of technical SEO, content strategy, and GEO (Generative Engine Optimization) perspectives
+- Avoided the obvious "famous" names (Neil Patel, Brian Dean) that industry sources themselves have flagged as no longer active practitioners
 
+### YouTube Transcripts — 10 Videos
 
-Issues Ran Into and How I Solved Them
+Collected via the `youtube-transcript-api` Python library (no API key required). Transcripts are organized by expert in [`/research/youtube-transcripts/`](research/youtube-transcripts/).
 
-1. Claude Code does not run natively on Windows
-Running claude --version in PowerShell returned a "command not found" error. Solution: installed WSL2 with Ubuntu and ran Claude Code from there instead, since the CLI requires a Linux environment.
+| Expert | Video | Topic |
+|--------|-------|-------|
+| Mike King | [Decoding the Future of SEO Measurement](https://youtube.com/watch?v=vhZS8trALwQ) | AI disruption of SEO metrics |
+| Koray Tuğberk Gübür | [Technical & Semantic SEO](https://youtube.com/watch?v=5PAoIhyalsg) | Semantic SEO and entity optimization |
+| Nathan Gotch | [AI Changed SEO Forever](https://youtube.com/watch?v=7mtCa8sqjBo) | How to win in AI search era |
+| Alex Birkett | [SEO Strategies for the New Search World](https://youtube.com/watch?v=L_WeZSgFe5I) | B2B SaaS organic growth |
+| Aleyda Solis | [SEO Reloaded](https://youtube.com/watch?v=qHXh09fnRcE) | Adapting SEO rules for AI world |
+| Lily Ray | [What IS and ISN'T Working in SEO](https://youtube.com/watch?v=J7ayY_Mdk4w) | Current SEO landscape |
+| Koray Tuğberk Gübür | [AI Agents & Semantic SEO](https://youtube.com/watch?v=mSHq_HxOyTA) | Fortune 500 SEO secrets |
+| Nathan Gotch | [Building AI SEO SaaS](https://youtube.com/watch?v=Y88G1JbGsEE) | AI SEO product development |
+| Aleyda Solis | [How to Prepare for AI Search](https://youtube.com/watch?v=NNl9sRCv3q8) | AI search roadmap |
+| Alex Birkett | [SEO Strategy 2026](https://youtube.com/watch?v=nQv2o2X7DDU) | The shift most B2B SaaS are missing |
 
-2. claude command not recognized after install
-After installing Claude Code, the CLI wasn't in the PATH. Solution: manually appended ~/.local/bin to PATH in .bashrc as instructed by the installer's own output, then reloaded the shell with source ~/.bashrc.
+### LinkedIn Posts — 3 Experts, 7 Posts
 
-3. Cursor opened a PowerShell terminal instead of a WSL terminal
-Even with the project located in the WSL filesystem, Cursor's default integrated terminal opened as PowerShell. Solution: manually selected "WSL"/"Ubuntu" as the default terminal profile via Terminal: Select Default Profile in the Command Palette.
+Collected manually (LinkedIn API requires enterprise-level approval — documented as a limitation). Posts are in [`/research/linkedin-posts/`](research/linkedin-posts/).
 
-4. Default AI model unavailable
-On first run, Claude Code attempted to use a model (Fable 5) that was temporarily unavailable due to an export control restriction. Solution: switched to Sonnet 4.6 using the /model command inside Claude Code.
+- **Kevin Indig** — 3 posts: AI prompt tracking framework for B2B SaaS, SEO vs AEO comparison, AI Mode vs AI Overviews user behavior study (846k sessions)
+- **Ben Goodey** — 1 live case study (3 parts): translating 14 blog posts → 5.33x AI visibility increase in 60 days for a B2B SaaS client
+- **Lily Ray** — 3 posts: why "best [category]" listicles hurt more than help in AI Overviews, the AI Slop Loop experiment (fake update adopted by LLMs in under 24h), Google's review system and listicle risk
 
-5. Extensions marketplace search returned no results at all
-Cursor's Extensions search bar returned zero results for any query — even for extensions known to exist, like "Python." This made it impossible to find or install the Codex extension through the UI. Troubleshooting steps tried: checking for Cursor updates (none available) and manually adding a extensions.gallery configuration block to settings.json — neither fixed the underlying issue.
-Solution: bypassed the marketplace entirely and installed Codex via its CLI (npm install -g @openai/codex), the same way Claude Code had been installed — running the tool once from the terminal triggered the editor integration automatically, without relying on the broken search.
+---
 
-6. Node.js/npm not installed
-Installing Codex requires npm, which wasn't present in the WSL environment. Solution: installed Node.js via nvm (Node Version Manager), then installed the LTS version of Node, which included npm.
+## Key Insights from the Research
 
-7. OAuth login error during Codex sign-in (invalid_state)
-The first attempt to sign in to Codex with ChatGPT failed with an invalid_state error after completing the browser login flow. Solution: simply retried the login flow from scratch (codex → "Sign in with ChatGPT" again), which completed successfully on the second attempt.
+After reviewing transcripts and posts across all 15 experts, three themes came up consistently:
+
+**1. Traditional SEO and AI visibility are correlated but not identical**
+Kevin Indig's data and Ben Goodey's case study both show that Google rankings and clicks still influence AI citation rates — but the relationship varies by platform. Perplexity and ChatGPT behave differently, and optimizing for one doesn't guarantee the other.
+
+**2. Self-promotional content is losing its AI search effectiveness**
+Lily Ray's data (100 B2B queries) shows brands are excluded from actual recommendations 69% of the time when their own listicle is cited as a source. Google has decoupled citation from recommendation. Real authority — what the rest of the web says about you — matters more than what you say about yourself.
+
+**3. The shift is from page-level SEO to entity and brand authority**
+Mike King (Relevance Engineering), Koray Tuğberk Gübür (semantic SEO), and Aleyda Solis all point to the same direction: AI systems evaluate brands and entities holistically, not just individual pages. Content production needs to build topical authority across a cluster, not just rank individual articles.
+
+---
+
+## Repository Structure
+
+```
+100hires-setup-task/
+
+├── README.md                          # This file
+└── research/
+├── sources.md                     # 15 experts with profiles and selection reasoning
+├── fetch_transcripts.py           # Script used to collect YouTube transcripts via API
+├── linkedin-posts/
+│   ├── kevin-indig.md             # 3 posts
+│   ├── ben-goodey.md              # Live AEO case study (3 parts)
+│   └── lily-ray.md                # 3 posts
+└── youtube-transcripts/
+├── mike-king_vhZS8trALwQ.md
+├── koray-tugberk-gubur_5PAoIhyalsg.md
+├── nathan-gotch_7mtCa8sqjBo.md
+├── alex-birkett_L_WeZSgFe5I.md
+├── aleyda-solis_qHXh09fnRcE.md
+├── lily-ray_J7ayY_Mdk4w.md
+├── koray-tugberk-gubur_mSHq_HxOyTA.md
+├── nathan-gotch_Y88G1JbGsEE.md
+├── aleyda-solis_NNl9sRCv3q8.md
+└── alex-birkett_nQv2o2X7DDU.md
+```
+
+---
+
+## Data Collection Methods
+
+- **YouTube transcripts:** Python script using `youtube-transcript-api` library — no API key required, fetches auto-generated or manual captions directly from YouTube
+- **LinkedIn posts:** Manual collection — LinkedIn's API requires enterprise approval and is not available for individual use. Posts were selected based on recency (last 3-6 months) and relevance to AI-powered SEO content production for B2B SaaS
+- **Expert selection:** Cross-referenced against multiple industry sources (Search Engine Land, Clutch rankings, community recommendations) to prioritize practitioners over theorists
