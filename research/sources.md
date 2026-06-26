@@ -90,5 +90,5 @@
 
 ### 15. Bernard Huang
 - **Role:** Building autonomous AI businesses · previously founder & bootstrapper at Clearscope
-- **LinkedIn:** https://www.linkedin.com/in/bernardhuang/
+- **LinkedIn:** https://www.linkedin.com/in/bernardjhuang/
 - **Why selected:** founder & bootstrapper at Clearscope, the content optimization tool used by enterprise SaaS content teams globally. Writes and speaks about topical authority, content grading, and AI-assisted editorial workflows. Valuable because he sits at the intersection of tool-building and content strategy — his insights reflect what high-performing SaaS content teams actually do in practice.
